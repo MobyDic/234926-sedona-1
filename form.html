@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+      <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button type="button" class="main-nav__hamburger"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">ГЛАВНАЯ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">ФОТО И ВИДЕО</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">ФОРМА ОТЗЫВА</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="Седона лого">
+          </picture>
+        </div>
+      </header>
+
+
+      <main class="page-content">
+
+        <div class="page-content__header page-content__header--border">
+          <div class="page-content__background page-content__background--litle">
+            <img class="page-content__img page-content__img--litle" src="img/text-sedona.svg">
+            <picture class="page-content__picture">
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img src="img/bg-intro-triangle-mobile.svg">
+            </picture>
+          </div>
+          <div class="page-content__intro page-content__intro--litle">
+            <h2 class="page-content__title page-content__title--litle">Оставьте свой отзыв</h2>
+            <p class="page-content__slogan page-content__slogan--litle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </div>
+
+        <form class="form" action="" method="post">
+          <fieldset class="form__fieldset form__fieldset--user-name">
+            <legend class="form__legend form__legend--big">Представьтесь, пожалуйста:</legend>
+            <legend class="form__legend form__legend--litle">Представьтесь:</legend>
+
+            <div class="form__field">
+              <label class="form__label" for="first-name">Имя:</label>
+              <input class="form__input" type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="last-name">Фамилия:</label>
+              <input class="form__input" type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form__field">
+              <label class="form__label" for="middle-name">Отчество:</label>
+              <input class="form__input" type="text" id="middle-name" name="middle-name" >
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--user-contact">
+            <legend class="form__legend form__legend--border"><span>Контактная информация:</span></legend>
+            <div class="form__field form__field--user-contact">
+              <label class="form__label form__label--user-contact" for="user-phone">Контактный телефон:</label>
+              <input class="form__input form__input--long" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}" placeholder="Введите телефон">
+              <svg class="icon icon--phone" height="18" width="18" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-phone" />
+              </svg>
+              <span class="form__error">Ошибка, перепроверьте номер</span>
+            </div>
+            <div class="form__field form__field--user-contact">
+              <label class="form__label form__label--user-contact" for="user-mail">Электронная почта:</label>
+              <input class="form__input form__input--long" type="email" id="user-mail" name="user-mail" placeholder="Введите e-mail">
+              <svg class="icon icon--mail" height="16" width="16" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-mail" />
+              </svg>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--reply">
+            <legend class="form__legend form__legend--left">Ваше общее впечатление:</legend>
+            <div class="form__field radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply1" value="positive" checked>
+              <i class="radio__icon"></i>
+              <label class="radio__label" for="user-reply1">Скорее положительное</label>
+            </div>
+            <div class="form__field radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply2"value="negative" >
+              <i class="radio__icon"></i>
+              <label class="radio__label" for="user-reply2">Скорее отрицательное</label>
+            </div>
+            <div class="form__field radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply3"value="unsure" >
+              <i class="radio__icon"></i>
+              <label class="radio__label" for="user-reply3">Затрудняюсь ответить</label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--visit-places">
+            <legend class="form__legend form__legend--border"><span>Посещенные достопримечательности:</span></legend>
+            <div class="form__wrap">
+              <div class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <i class="checkbox__icon"></i>
+                <label class="checkbox__label" for="devil-bridge">Мост Дьявола</label>
+              </div>
+              <div class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
+                <i class="checkbox__icon"></i>
+                <label class="checkbox__label" for="park">Слайд-парк</label>
+              </div>
+              <div class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell">
+                <i class="checkbox__icon"></i>
+                <label class="checkbox__label" for="mountain-bell">Гора-Колокол</label>
+              </div>
+              <div class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks" checked>
+                 <i class="checkbox__icon"></i>
+                <label class="checkbox__label" for="red-rocks">Красные скалы</label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--emotion">
+            <legend class="form__legend form__legend--border"><span>Опишите свои эмоции:</span></legend>
+            <textarea class="form__textarea" name="note" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+
+          <button type="sumbit" class="btn btn--send">Отправить отзыв</button>
+          <span class="form__text">* -- Обязательные поля</span>
+
+        </form>
+      </main>
+
+
+      <footer class="page-footer">
+
+        <div class="page-footer__content">
+
+          <div class="hashtag">#VISITSEDONA</div>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a class="social-link  social-link--twitter"  href="" >
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-twitter" />
+                </svg>
+              </a>
+              </li>
+              <li class="social__item"><a class="social-link  social-link--facebook"  href="" >
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-facebook" />
+                </svg>
+              </a></li>
+              <li class="social__item"><a class="social-link  social-link--youtube"  href="">
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-youtube" />
+                </svg></a></li>
+            </ul>
+          </div>
+
+          <div class="page-footer__copyright">
+            <span class="page-footer__design-by">РАЗРАБОТАНО</span>
+            <a href="https://htmlacademy.ru" class="page-footer__copyright-link">
+              <img src="img/logo-htmlacademy.svg" alt="Лого HTML Academy" width="25px" height="35px">
+            </a>
+          </div>
+
+        </div>
+
+      </footer>
+
+    </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>

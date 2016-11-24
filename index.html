@@ -3,10 +3,176 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <div class="wrapper">
 
+      <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button type="button" class="main-nav__hamburger" ></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="#">ГЛАВНАЯ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">ФОТО И ВИДЕО</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">ФОРМА ОТЗЫВА</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="Седона лого">
+          </picture>
+        </div>
+      </header>
+
+
+      <main class="page-content">
+
+        <div class="page-content__header">
+          <div class="page-content__background">
+            <img class="page-content__img" src="img/text-sedona-index.svg">
+            <picture class="page-content__picture">
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img src="img/bg-intro-triangle-mobile.svg">
+            </picture>
+          </div>
+          <div class="page-content__intro">
+            <p class="page-content__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+            <p class="page-content__slogan">Рассмотрим 5 причин, по которым седона круче чем Гранд каньон!</p>
+          </div>
+
+          <img src="img/bg-triangle.svg" class="page-content__triangle">
+        </div>
+
+        <div class="advantages">
+          <div class="advantages__wrapper">
+            <div class="advantages__item advantages__item--blue">
+
+              <h2 class="advantages__title">Настоящий городок</h2>
+              <span class="advantages__counter">- №1 -</span>
+              <p class="advantages__slogan">Седона не атракцион для туристов там течет своя жизнь</p>
+            </div>
+            <div class="advantages__img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-city%401x.jpg 1x, img/photo-city%402x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-city-tablet%401x.jpg 1x, img/photo-city-tablet%402x.jpg 2x">
+                <img src="img/photo-city-mobile%401x.jpg" srcset="img/p/img/photo-city-mobile%401x.jpg 2x"  alt="Фото Седоны" >
+              </picture>
+              </div>
+          </div>
+
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--left">
+                <img src="http://placehold.it/150x100">
+                <h3 class="advantages__title">Жилье</h3>
+                <p class="advantages__slogan advantages__slogan--grey">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
+              <li class="advantages__item advantages__item--left">
+                <img src="http://placehold.it/150x100">
+                <h3 class="advantages__title">Сувениры</h3>
+                <p class="advantages__slogan advantages__slogan--grey">Не только китайского, но и местного производства!</p>
+              </li>
+              <li class="advantages__item advantages__item--left">
+                <img src="http://placehold.it/150x100">
+                <h3 class="advantages__title">Еда</h3>
+                <p  class="advantages__slogan advantages__slogan--grey">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="advantages__wrapper">
+            <div class="advantages__item advantages__item--blue">
+              <h2 class="advantages__title">Там есть мост дьявола</h2>
+              <span class="advantages__counter">- №2 -</span>
+              <p class="advantages__slogan">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+            <div class="advantages__img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge%401x.jpg 1x, img/photo-bridge%402x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet%401x.jpg 1x, img/photo-bridge-tablet%402x.jpg 2x">
+                <img src="img/photo-bridge-mobile%401x.jpg" srcset="img/p/img/photo-bridge-mobile%401x.jpg 2x"  alt="Мост Седоны" >
+              </picture>
+            </div>
+          </div>
+
+          <div class="advantages__wrapper">
+            <ul class="advantages__list">
+              <li class="advantages__item advantages__item--grey">
+                <h2 class="advantages__title ">Небольшая площадь</h2>
+                <span class="advantages__counter advantages__counter--grey">- №3 -</span>
+                <p class="advantages__slogan advantages__slogan--grey">Все достопримеча-<br>тельности находятся очень близко</p>
+              </li>
+              <li class="advantages__item advantages__item--grey">
+                <h2 class="advantages__title">Красивая дорога</h2>
+                <span class="advantages__counter advantages__counter--grey">- №4 -</span>
+                <p class="advantages__slogan advantages__slogan--grey">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+              </li>
+              <li class="advantages__item advantages__item--grey">
+                <h2 class="advantages__title">Мало туристов</h2>
+                <span class="advantages__counter  advantages__counter--grey">- №5 -</span>
+                <p class="advantages__slogan advantages__slogan--grey">Большинство едет в Гранд Каньон и толпится там</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="hotel-find">
+          <p class="hotel-find__text"><strong>Заинтересовались?</strong>
+          Укажите предполагаемые даты поездки<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="btn btn--find-hotel"  href="" >НАЙТИ ГОСТИНИЦУ</a>
+        </div>
+      </main>
+
+
+      <footer class="page-footer">
+        <div class="map">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+          <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+          <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+        </svg>
+        </div>
+
+        <div class="page-footer__content">
+
+          <div class="hashtag">#VISITSEDONA</div>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item">
+                <a class="social__link  social__link--twitter"  href="" >
+                  <img src="http://placehold.it/150x100">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link  social__link--facebook"  href="" >
+                  <img src="http://placehold.it/150x100">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link  social__link--youtube"  href="">
+                  <img src="http://placehold.it/150x100">
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="page-footer__copyright">
+            <span class="page-footer__design-by">РАЗРАБОТАНО</span>
+            <a href="https://htmlacademy.ru" class="page-footer__copyright-link">
+              <img src="img/logo-htmlacademy.svg" alt="Лого HTML Academy" width="25px" height="35px">
+            </a>
+          </div>
+
+        </div>
+
+      </footer>
+
+    </div>
+  <script src="js/script.js"></script>
   </body>
 </html>

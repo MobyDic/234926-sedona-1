@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body>
+
+    <div class="wrapper">
+
+      <header class="page-header">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <button type="button" class="main-nav__hamburger"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">ГЛАВНАЯ</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="#">ФОТО И ВИДЕО</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">ФОРМА ОТЗЫВА</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="Седона лого">
+          </picture>
+        </div>
+      </header>
+
+
+      <main class="page-content">
+
+        <div class="page-content__header page-content__header--border">
+          <div class="page-content__background page-content__background--litle">
+            <img class="page-content__img page-content__img--litle" src="img/text-sedona.svg">
+            <picture class="page-content__picture">
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img src="img/bg-intro-triangle-mobile.svg">
+            </picture>
+          </div>
+          <div class="page-content__intro">
+            <h1 class="page-content__title page-content__title--litle">Фото и видео</h1>
+            <p class="page-content__slogan page-content__slogan--litle">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике</p>
+          </div>
+        </div>
+
+        <div class="photos-list">
+
+          <div class="photos-item">
+            <div class="photos-item__img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-1-desktop%401x.jpg 1x, img/photo-1-desktop%402x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-1-tablet%401x.jpg 1x, img/photo-1-tablet%402x.jpg 2x">
+                <img src="img/photo-1-mobile%401x.jpg" srcset="img/p/img/photo-1-mobile%401x.jpg 2x"  alt="Неродные просторы" >
+              </picture>
+            </div>
+            <div class="photos-item__info">
+              <h2 class="photos-item__title">Неродные просторы</h2>
+              <p class="photos-item__author">Автор фото: Борис</p>
+              <div class="like-counter">
+                <button type="button" class="like-counter__hand">
+                  <svg class="icon icon--like" height="22" width="22" xmlns="http://www.w3.org/2000/svg" >
+                    <use xlink:href="#icon-like" />
+                  </svg>
+                </button>
+                <span class="like-counter__number">1350</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="photos-item">
+            <div class="photos-item__img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-2-desktop%401x.jpg 1x, img/photo-2-desktop%402x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-2-tablet%401x.jpg 1x, img/photo-2-tablet%402x.jpg 2x">
+                <img src="img/photo-2-mobile%401x.jpg" srcset="img/p/img/photo-2-mobile%401x.jpg 2x"  alt="Местная растительность" >
+              </picture>
+            </div>
+            <div class="photos-item__info">
+              <h2 class="photos-item__title">Местная растительность</h2>
+              <p class="photos-item__author">Автор фото: Сергей</p>
+              <div class="like-counter">
+                <button type="button" class="like-counter__hand">
+                  <svg class="icon icon--like" height="20" width="20" xmlns="http://www.w3.org/2000/svg" >
+                    <use xlink:href="#icon-like" />
+                  </svg>
+                </button>
+                <span class="like-counter__number">143</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="photos-item">
+            <div class="photos-item__img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-3-desktop%401x.jpg 1x, img/photo-3-desktop%402x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-3-tablet%401x.jpg 1x, img/photo-3-tablet%402x.jpg 2x">
+                <img src="img/photo-3-mobile%401x.jpg" srcset="img/p/img/photo-3-mobile%401x.jpg 2x"  alt="Дорога на север" >
+              </picture>
+            </div>
+            <div class="photos-item__info">
+              <h2 class="photos-item__title">Дорога на север</h2>
+              <p class="photos-item__author">Автор фото: Петр</p>
+              <div class="like-counter">
+                <button type="button" class="like-counter__hand">
+                  <svg class="icon icon--like" height="20" width="20" xmlns="http://www.w3.org/2000/svg" >
+                    <use xlink:href="#icon-like" />
+                  </svg>
+                </button>
+                <span class="like-counter__number">96</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="photos-item">
+            <div class="photos-item__img">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/photo-4-desktop%401x.jpg 1x, img/photo-4-desktop%402x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-4-tablet%401x.jpg 1x, img/photo-4-tablet%402x.jpg 2x">
+                <img src="img/photo-4-mobile%401x.jpg" srcset="img/p/img/photo-4-mobile%401x.jpg 2x"  alt="Мост дьявола" >
+              </picture>
+            </div>
+            <div class="photos-item__info">
+              <h2 class="photos-item__title">Мост дьявола</h2>
+              <p class="photos-item__author">Автор фото: Антон</p>
+              <div class="like-counter">
+                <button type="button" class="like-counter__hand">
+                  <svg class="icon icon--like" height="20" width="20" xmlns="http://www.w3.org/2000/svg" >
+                    <use xlink:href="#icon-like" />
+                  </svg>
+                </button>
+                <span class="like-counter__number">254</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="video">
+          <p class="video__text"><strong>ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</strong>
+          Cмотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="video__player">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/video-desktop%401x.jpg 1x, img/video-desktop%402x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet%401x.jpg 1x, img/video-tablet%402x.jpg 2x">
+              <img src="img/video-mobile%401x.jpg" srcset="img/p/img/video-mobile%401x.jpg 2x"  alt="Неродные просторы" >
+            </picture>
+            <div class="video__tools">
+              <div class="video__scroll">
+                <p class="video__marker"></p>
+              </div>
+              <button class="video__button video__button--replay">
+                <svg class="icon icon--video-replay" height="20" width="20" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-video-replay" />
+                </svg>
+              </button>
+              <button class="video__button video__button--subtitles">
+                <svg class="icon icon--subtitles" height="32" width="32" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-video-subtitles" />
+                </svg>
+              </button>
+              <button class="video__button video__button--fullscreen">
+              <svg class="icon icon--fullscreen" height="20" width="20" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-video-fullscreen" />
+                </svg>
+              </button>
+            </div>
+            <div class="video__panel"></div>
+          </div>
+        </div>
+
+      </main>
+
+
+      <footer class="page-footer">
+        <div class="page-footer__content">
+
+          <div class="hashtag">#VISITSEDONA</div>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a class="social-link  social-link--twitter"  href="" >
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-twitter" />
+                </svg>
+              </a>
+              </li>
+              <li class="social__item"><a class="social-link  social-link--facebook"  href="" >
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-facebook" />
+                </svg>
+              </a></li>
+              <li class="social__item"><a class="social-link  social-link--youtube"  href="">
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-youtube" />
+                </svg></a></li>
+            </ul>
+          </div>
+
+          <div class="page-footer__copyright">
+            <span class="page-footer__design-by">РАЗРАБОТАНО</span>
+            <a href="https://htmlacademy.ru" class="page-footer__copyright-link">
+              <img src="img/logo-htmlacademy.svg" alt="Лого HTML Academy" width="25px" height="35px">
+            </a>
+          </div>
+
+        </div>
+
+      </footer>
+
+    </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>
