@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Седона</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
@@ -13,18 +15,20 @@
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <button type="button" class="main-nav__hamburger" ></button>
           <ul class="main-nav__list">
-            <li class="main-nav__item"><a class="main-nav__link" href="#">ГЛАВНАЯ</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">ФОТО И ВИДЕО</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="form.html">ФОРМА ОТЗЫВА</a></li>
-            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML ACADEMY</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
           </ul>
         </nav>
         <div class="page-header__logo">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img src="img/logo-sedona-mobile.svg" width="102px" height="84px" alt="Седона лого">
-          </picture>
+          <a href="index.html" class="page-header__link">
+            <picture class="page-header__img">
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона лого">
+            </picture>
+          </a>
         </div>
       </header>
 
@@ -33,11 +37,11 @@
 
         <div class="page-content__header">
           <div class="page-content__background">
-            <img class="page-content__img" src="img/text-sedona-index.svg">
+            <img class="page-content__img" src="img/text-sedona-index.svg" alt="Седона текст">
             <picture class="page-content__picture">
               <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
-              <img src="img/bg-intro-triangle-mobile.svg">
+              <img src="img/bg-intro-triangle-mobile.svg" alt="Седона декор">
             </picture>
           </div>
           <div class="page-content__intro">
@@ -45,7 +49,7 @@
             <p class="page-content__slogan">Рассмотрим 5 причин, по которым седона круче чем Гранд каньон!</p>
           </div>
 
-          <img src="img/bg-triangle.svg" class="page-content__triangle">
+          <img src="img/bg-triangle.svg" class="page-content__triangle" alt="Седона декор">
         </div>
 
         <div class="advantages">
@@ -62,28 +66,32 @@
                 <source media="(min-width: 768px)" srcset="img/photo-city-tablet%401x.jpg 1x, img/photo-city-tablet%402x.jpg 2x">
                 <img src="img/photo-city-mobile%401x.jpg" srcset="img/p/img/photo-city-mobile%401x.jpg 2x"  alt="Фото Седоны" >
               </picture>
-              </div>
+            </div>
           </div>
 
-          <div class="advantages__wrapper">
-            <ul class="advantages__list">
-              <li class="advantages__item advantages__item--left">
-                <img src="http://placehold.it/150x100">
-                <h3 class="advantages__title">Жилье</h3>
-                <p class="advantages__slogan advantages__slogan--grey">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="advantages__item advantages__item--left">
-                <img src="http://placehold.it/150x100">
-                <h3 class="advantages__title">Сувениры</h3>
-                <p class="advantages__slogan advantages__slogan--grey">Не только китайского, но и местного производства!</p>
-              </li>
-              <li class="advantages__item advantages__item--left">
-                <img src="http://placehold.it/150x100">
-                <h3 class="advantages__title">Еда</h3>
-                <p  class="advantages__slogan advantages__slogan--grey">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-              </li>
-            </ul>
-          </div>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--left">
+              <svg class="icon icon--house" xmlns="http://www.w3.org/2000/svg" >
+                <use xlink:href="img/symbols.svg#icon-house" />
+              </svg>
+              <h3 class="advantages__title">Жилье</h3>
+              <p class="advantages__slogan advantages__slogan--grey">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="advantages__item advantages__item--left">
+              <svg class="icon icon--gift" xmlns="http://www.w3.org/2000/svg" >
+                <use xlink:href="img/symbols.svg#icon-gift" />
+              </svg>
+              <h3 class="advantages__title">Сувениры</h3>
+              <p class="advantages__slogan advantages__slogan--grey">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="advantages__item advantages__item--left">
+              <svg class="icon icon--burger" xmlns="http://www.w3.org/2000/svg" >
+                <use xlink:href="img/symbols.svg#icon-burger" />
+              </svg>
+              <h3 class="advantages__title">Еда</h3>
+              <p  class="advantages__slogan advantages__slogan--grey">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
 
           <div class="advantages__wrapper">
             <div class="advantages__item advantages__item--blue">
@@ -105,9 +113,9 @@
               <li class="advantages__item advantages__item--grey">
                 <h2 class="advantages__title ">Небольшая площадь</h2>
                 <span class="advantages__counter advantages__counter--grey">- №3 -</span>
-                <p class="advantages__slogan advantages__slogan--grey">Все достопримеча-<br>тельности находятся очень близко</p>
+                <p class="advantages__slogan advantages__slogan--grey">Все достопримечательности находятся очень близко</p>
               </li>
-              <li class="advantages__item advantages__item--grey">
+             <li class="advantages__item advantages__item--grey">
                 <h2 class="advantages__title">Красивая дорога</h2>
                 <span class="advantages__counter advantages__counter--grey">- №4 -</span>
                 <p class="advantages__slogan advantages__slogan--grey">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
@@ -123,18 +131,15 @@
 
         <div class="hotel-find">
           <p class="hotel-find__text"><strong>Заинтересовались?</strong>
-          Укажите предполагаемые даты поездки<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <a class="btn btn--find-hotel"  href="" >НАЙТИ ГОСТИНИЦУ</a>
+          Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="btn btn--find-hotel"  href="find-hotel.html" >НАЙТИ ГОСТИНИЦУ</a>
         </div>
       </main>
 
 
       <footer class="page-footer">
         <div class="map">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27px" height="27px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
-          <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
-          <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
-        </svg>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d837312.8398026426!2d-111.9788166!3d34.9377241!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1456061949857" width="1200" height="350" style="border:0" allowfullscreen></iframe>
         </div>
 
         <div class="page-footer__content">
@@ -143,20 +148,21 @@
 
           <div class="social">
             <ul class="social__list">
-              <li class="social__item">
-                <a class="social__link  social__link--twitter"  href="" >
-                  <img src="http://placehold.it/150x100">
-                </a>
+              <li class="social__item"><a class="social-link  social-link--twitter"  href="" >
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="img/symbols.svg#icon-twitter" />
+                </svg>
+              </a>
               </li>
-              <li class="social__item">
-                <a class="social__link  social__link--facebook"  href="" >
-                  <img src="http://placehold.it/150x100">
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link  social__link--youtube"  href="">
-                  <img src="http://placehold.it/150x100">
-                </a>
+              <li class="social__item"><a class="social-link  social-link--facebook"  href="" >
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="img/symbols.svg#icon-facebook" />
+                </svg>
+              </a></li>
+              <li class="social__item"><a class="social-link  social-link--youtube"  href="">
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="img/symbols.svg#icon-youtube" />
+                </svg></a>
               </li>
             </ul>
           </div>
@@ -164,7 +170,9 @@
           <div class="page-footer__copyright">
             <span class="page-footer__design-by">РАЗРАБОТАНО</span>
             <a href="https://htmlacademy.ru" class="page-footer__copyright-link">
-              <img src="img/logo-htmlacademy.svg" alt="Лого HTML Academy" width="25px" height="35px">
+              <svg xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="img/symbols.svg#logo-htmlacademy" />
+              </svg>
             </a>
           </div>
 
