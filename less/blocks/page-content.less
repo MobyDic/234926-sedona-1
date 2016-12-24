@@ -1,7 +1,7 @@
 .page-content__background {
   position: relative;
   height: 390px;
-  background: @color-blue url("../img/bg-back-mobile%401x.jpg") -224px 0px no-repeat;
+  background: @color-lightgrey url("../img/bg-back-mobile%401x.jpg") -224px 0px no-repeat;
   z-index: -1;
   .page-content__img {
     position: relative;
@@ -52,7 +52,7 @@
 .page-content__intro {
 	margin:  30px 20px;
   text-align: center;
-  &--litle {
+  &--short {
     margin-bottom: 0;
   }
 }
@@ -89,7 +89,7 @@
   }
   .page-content__background {
     height: 520px;
-    background: url("../img/bg-back-tablet@1x.jpg") 100% 100% no-repeat;
+    background: @color-lightgrey url("../img/bg-back-tablet@1x.jpg") 100% 100% no-repeat;
     &--litle {
       height: 290px;
     }
@@ -109,7 +109,7 @@
   }
   .page-content__slogan--litle{
     width: 440px;
-    padding: 5px;
+    padding: 10px 5px 20px;
     margin: 0 auto;
   }
   .page-content__intro {
@@ -124,7 +124,7 @@
 
 @media @desktop-widths {
   .page-content__background {
-    background: url("../img/bg-back-desktop@1x.jpg") 100% 100% no-repeat;
+    background: @color-lightgrey url("../img/bg-back-desktop@1x.jpg") 100% 100% no-repeat;
     @media @retina {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 1338px auto;
@@ -134,9 +134,11 @@
     }
   }
   .page-content__intro {
-    padding-bottom: 5px;
     &--litle {
-      margin-bottom: 50px;
+      margin-bottom: 45px;
+    }
+    &--short {
+      margin-bottom: 30px;
     }
   }
   .page-content__title {
@@ -146,9 +148,9 @@
     }
   }
   .page-content__slogan {
-    margin: 30px auto 0;
-  }
-  .page-content__slogan--litle {
-    padding-bottom: 5px;
+    margin: 27px auto 0;
+    &--litle {
+      padding: 0 5px 30px;
+    }
   }
 }
