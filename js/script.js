@@ -12,9 +12,3 @@ navToggle.addEventListener('click', function() {
       navMain.classList.remove('main-nav--opened');
   }
 });
-
-// var btnSend = document.querySelector('.btn--send');
-// var tel = document.querySelector('#user-phone');
-// btnSend.addEventListener('click', function() {
-//   tel.classList.add('display:none;');
-// });
