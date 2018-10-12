@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic-ext,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <script src="js/svg4everybody.min.js"></script>
+    <script src="js/picturefill.min.js"></script>
+    <script>svg4everybody();</script>
+  </head>
+
+  <body>
+    <svg style="display:none" xmlns="http://www.w3.org/2000/svg"><symbol id="icon-mail" viewBox="0 0 16 16"><path d="M8 10c-.266 0-.5-.094-1-.336L0 6v7c0 .55.45 1 1 1h14c.55 0 1-.45 1-1V6L9 9.664c-.5.242-.734.336-1 .336zm7-8H1c-.55 0-1 .45-1 1v.758l8 4.205 8-4.205V3c0-.55-.45-1-1-1z"/></symbol><symbol id="icon-menu" viewBox="0 0 22.928 21.982"><path d="M0 0h22.928v3.964H0zM0 9.009h22.928v3.964H0zM0 18.018h22.928v3.964H0z"/></symbol><symbol id="icon-phone" viewBox="0 0 18 18"><path fill="#010101" d="M3.6 7.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.699-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V17c0 .6-.4 1-1 1C7.6 18 0 10.4 0 1c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1L3.6 7.8z"/></symbol><symbol id="icon-facebook" viewBox="0 0 8.672 18.944"><path d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z"/></symbol><symbol id="icon-twitter" viewBox="0 0 17.5 14.663"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z"/></symbol><symbol id="icon-youtube" viewBox="0 0 19.979 14.015"><path d="M17.145 0H2.835A2.842 2.842 0 0 0 0 2.835v8.345a2.842 2.842 0 0 0 2.835 2.835h14.31a2.842 2.842 0 0 0 2.835-2.835V2.835A2.844 2.844 0 0 0 17.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z"/></symbol><symbol id="logo-htmlacademy" viewBox="0 0 26.943 34.09"><path d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z"/></symbol></svg>
+
+    <div class="wrapper">
+
+      <header class="page-header">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
+          <button type="button" class="main-nav__hamburger"></button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+            <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Форма отзыва</a></li>
+            <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__logo">
+          <a href="index.html" class="page-header__link">
+            <picture class="page-header__img">
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="Седона лого">
+            </picture>
+          </a>
+        </div>
+      </header>
+
+
+      <main class="page-content">
+
+        <div class="page-content__header page-content__header--border">
+          <div class="page-content__background page-content__background--litle">
+            <img class="page-content__img page-content__img--litle" src="img/text-sedona.svg" alt="Седона текст">
+            <picture class="page-content__picture">
+              <source media="(min-width: 1200px)" srcset="img/bg-intro-triangle-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/bg-intro-triangle-tablet.svg">
+              <img src="img/bg-intro-triangle-mobile.svg" alt="Седона декор">
+            </picture>
+          </div>
+          <div class="page-content__intro page-content__intro--short">
+            <h2 class="page-content__title page-content__title--litle">Оставьте свой отзыв</h2>
+            <p class="page-content__slogan page-content__slogan--litle">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          </div>
+        </div>
+
+        <form class="form" action="/comment" method="post">
+          <fieldset class="form__fieldset form__fieldset--user-name">
+            <legend class="form__legend">Представьтесь<span class="form__legend--big">, пожалуйста</span>:</legend>
+            <div class="form__field input-field">
+              <label class="input__label" for="first-name">Имя:</label>
+              <input class="input__text" type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form__field input-field">
+              <label class="input__label" for="last-name">Фамилия:</label>
+              <input class="input__text" type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form__field input-field">
+              <label class="input__label" for="middle-name">Отчество:</label>
+              <input class="input__text" type="text" id="middle-name" name="middle-name" >
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--user-contact">
+
+            <legend class="form__legend form__legend--border"><span class="legend__wrap">Контактная информация:</span></legend>
+            <div class="form__wrap">
+              <div class="form__field form__field--user-contact input-field">
+                <label class="input__label form__label--user-contact" for="user-phone"><span class="form__legend--litle">Контактный </span>телефон:</label>
+                <input class="input__text input__text--long" type="tel" id="user-phone" name="user-phone" pattern="[0-9]{3}-[0-9]{6}" placeholder="Введите телефон">
+                <svg class="icon icon--phone" height="18" width="18" xmlns="http://www.w3.org/2000/svg" >
+                    <use xlink:href="#icon-phone" />
+                </svg>
+                <span class="input__error">Ошибка, перепроверьте номер</span>
+              </div>
+              <div class="form__field form__field--user-contact input-field">
+                <label class="input__label form__label--user-contact" for="user-mail">Электронная почта:</label>
+                <input class="input__text input__text--long" type="email" id="user-mail" name="user-mail" placeholder="Введите e-mail">
+                <svg class="icon icon--mail" height="16" width="16" xmlns="http://www.w3.org/2000/svg" >
+                    <use xlink:href="#icon-mail" />
+                </svg>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--reply">
+            <legend class="form__legend form__legend--left">Ваше общее впечатление:</legend>
+            <label class="form__radio radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply1" value="positive" checked>
+              <i class="radio__icon"></i>
+              Скорее положительное
+            </label>
+            <label class="form__radio radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply2" value="negative" >
+              <i class="radio__icon"></i>
+              Скорее отрицательное
+            </label>
+            <label class="form__radio radio">
+              <input class="radio__input" type="radio" name="user-reply" id="user-reply3" value="unsure" >
+              <i class="radio__icon"></i>
+              Затрудняюсь ответить
+            </label>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--visit-places">
+            <legend class="form__legend form__legend--border"><span class="legend__wrap">Посещенные достопримечательности:</span></legend>
+            <div class="form__wrap">
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="devil-bridge" id="devil-bridge" checked>
+                <i class="checkbox__icon"></i>
+                Мост Дьявола
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="park" id="park" checked>
+                <i class="checkbox__icon"></i>
+                Слайд-парк
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="mountain-bell" id="mountain-bell" checked>
+                <i class="checkbox__icon"></i>
+                Гора-Колокол
+              </label>
+              <label class="form__checkbox checkbox">
+                <input class="checkbox__input" type="checkbox" name="red-rocks" id="red-rocks">
+                 <i class="checkbox__icon"></i>
+                Красные скалы
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset form__fieldset--emotion">
+            <legend class="form__legend form__legend--border"><span class="legend__wrap">Опишите свои эмоции:</span></legend>
+            <textarea class="form__textarea" name="note" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+
+          <button type="submit" class="btn btn--send" >Отправить отзыв</button>
+          <span class="form__text">* -- Обязательные поля</span>
+
+        </form>
+      </main>
+
+
+      <footer class="page-footer">
+
+        <div class="page-footer__content">
+
+          <div class="hashtag">#VISITSEDONA</div>
+
+          <div class="social">
+            <ul class="social__list">
+              <li class="social__item"><a class="social-link  social-link--twitter"  href="" >
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-twitter" />
+                </svg>
+              </a>
+              </li>
+              <li class="social__item"><a class="social-link  social-link--facebook"  href="" >
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-facebook" />
+                </svg>
+              </a></li>
+              <li class="social__item"><a class="social-link  social-link--youtube"  href="">
+                <svg class="icon icon--social" height="90" width="69" xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#icon-youtube" />
+                </svg></a></li>
+            </ul>
+          </div>
+
+          <div class="page-footer__copyright">
+            <span class="page-footer__design-by">РАЗРАБОТАНО</span>
+            <a href="https://htmlacademy.ru" class="page-footer__copyright-link">
+              <svg xmlns="http://www.w3.org/2000/svg" >
+                  <use xlink:href="#logo-htmlacademy" />
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+      </footer>
+
+    </div>
+  <script src="js/script.js"></script>
+  </body>
+</html>
